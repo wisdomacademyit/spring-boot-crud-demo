@@ -22,4 +22,12 @@ public class StudentService {
 		return studentRepository.findAll();
 	}
 	
+	public Student update(Student student) throws Exception{
+		return studentRepository.save(student);
+	}
+	
+	public void delete(int id) throws Exception{
+		studentRepository.deleteById(id);
+	}
+	
 }
